@@ -1,0 +1,18 @@
+<body class="app-main-page">
+<%= link_to 'Logout', logout_user_path(@account&.user&.id), method: :delete, class: 'logout' %>
+<h1>Transaction Management Application</h1>
+<h1><%="Welcome  " + @account&.name %></h1>
+
+<div class="container account">
+  <div class="account-details">
+    <h2>Account number: </h2>
+    <p class="account-number"><%= @account&.account_number %></p>
+    <h2>Current balance</h2>
+    <p class="account-balance"><%= "$ " + @account&.balance.to_s %></p>
+  </div>
+</div>
+  <div class="btn-group account_action">
+    <%= link_to 'View transaction history', account_transactions_path(account_id: @account&.id), class: 'btn btn-primary' %>
+    <%= link_to 'Send money', new_account_transaction_path(account_id: @account&.id), class: 'btn btn-primary' %>
+  </div>
+</body>

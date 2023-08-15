@@ -1,0 +1,162 @@
+.home-page{
+  background: url(https://img.freepik.com/free-vector/bank-customer-getting-loan-man-wheeling-cart-with-cash-flat-vector-illustration-finance-money-banking-service_74855-8233.jpg?w=2000);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-position: 50% 50%;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  background-color:cadetblue;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mb-3 {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color:khaki;
+  color: black;
+  padding: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12%;
+  margin: 30px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.signup_page{
+  background: url(https://www.snaplogic.com/wp-content/uploads/2023/05/SnapLabs-bg-2.svg);
+}
+
+.signup_form{
+  padding: 50px ;
+  border-color:cadetblue;
+}
+
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.account-details {
+  margin-bottom: 20px;
+}
+
+.account{
+  background-color:powderblue;
+  border: 5px solid;
+  padding: 30px;
+}
+
+.account_action{
+  margin: 60px;
+  text-align: center;
+}
+
+.account-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.account-type {
+  font-size: 1em;
+}
+
+.account-balance {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0080ff;
+}
+
+.account-number {
+  font-size: 1em;
+}
+
+.logout{
+  float: right;
+  background-color:maroon;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12%;
+  margin: 10px;
+}
+
+ .app-main-page{
+  background: url(https://c8.alamy.com/comp/J58D92/money-in-the-mail-envelope-cash-icon-in-flat-style-dollar-bank-J58D92.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-position: 50% 50%;
+}
+.transfer-money-page{
+  background: url(https://img.freepik.com/free-vector/person-sending-money-using-phone-flat-vector-illustration-hands-holding-cash-smartphone-with-banking-app-its-screen-money-transferring-concept-banner-website-design-landing-web-page_74855-25256.jpg?w=2000);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-position: 50% 50%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 70px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #ddd;
+}
+
+th {
+  text-align: left;
+  background-color:olive;
+}
+.view-money-page{
+  background: url(https://media.istockphoto.com/id/1073831676/vector/employer-with-magnifying-glass-exploring-application-papers.jpg?s=612x612&w=0&k=20&c=g_YJQNxm7t5lwB7W0ohpJO-lRJ4ObXsuaRxUtpAFXfY=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-position: 50% 50%;
+}

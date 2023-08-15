@@ -1,0 +1,31 @@
+<body class= "transfer-money-page">
+<h1>Transfer Money</h1>
+
+<div class="alert alert-danger" data-dismiss="alert">
+  <%= flash[:error] %>
+</div>
+
+<%= form_with model: [@account, @transaction], url: account_transactions_path(@account), class: "account" do |form| %>
+  <div class="mb-3">
+    <%= form.label :receiver_account_id, "Account Id" %>
+    <%= form.text_field :receiver_account_id, class: "form-control", placeholder: "Enter account id" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :transaction_amount, "Transaction Amount" %>
+    <%= form.text_field :transaction_amount, class: "form-control", placeholder: "Enter your amount" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :note, "Note" %>x
+    <%= form.text_field :note, class: "form-control", placeholder: "Enter Note" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit "Submit Transaction", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= link_to 'Go Back To Home Page', account_path(id: @account.user.id), class: 'btn btn-primary account_action ' %>
+
+</body >

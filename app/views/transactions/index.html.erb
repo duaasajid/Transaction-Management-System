@@ -1,0 +1,32 @@
+<body class="view-money-page">
+<h1>Transaction History</h1>
+
+<div class="btn-group account_action">
+  <%= link_to 'New Transaction', new_account_transaction_path(@account), class: 'btn btn-primary' %>
+  <%= link_to 'Home Page', account_path(id: @account.user.id), class: 'btn btn-primary' %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Account Id</th>
+      <th>Transaction Amount</th>
+      <th>Transaction Type</th>
+      <th>Date</th>
+      <th>Note</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @transactions.each do |transaction| %>
+      <tr>
+        <td><%= Account.find(transaction.receiver_account_id).account_number %></td>
+        <td><%= transaction&.transaction_amount %></td>
+        <td><%= transaction&.transaction_type %></td>
+        <td><%= transaction&.date&.to_date %></td>
+        <td><%= transaction&.note %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</body>
